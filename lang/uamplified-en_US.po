@@ -1,0 +1,628 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: uamplified.io\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-29 01:35+0000\n"
+"PO-Revision-Date: 2018-03-29 01:36+0000\n"
+"Last-Translator: unimatrix0 <gabriel.s@merovingi.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: includes/uamp-help.php:20
+msgid "Plugin Tools"
+msgstr ""
+
+#: includes/uamp-help.php:21
+msgid ""
+"We have put together a list of tools to help you with your uamplified.io "
+"integration. You should only use these tools when needed."
+msgstr ""
+
+#: includes/uamp-help.php:26
+msgid "Clear Widget Cache"
+msgstr ""
+
+#: includes/uamp-help.php:28
+msgid ""
+"It would be impractical to request data from the uamplified.io servers for "
+"your products on every single page load. These calls can take time which in "
+"turn would affect your websites load time significantly. To avoid this, the "
+"plugin caches your requests and saves them for either one hour or one day. "
+"This includes data you see in your widgets, in your menu items or on the "
+"settings page."
+msgstr ""
+
+#: includes/uamp-help.php:29
+msgid ""
+"Deleting these cache files will force your widgets and menu items to request "
+"a fresh set of data from the uamplified.io servers. If the servers are down "
+"at the time of the sync, your product data will remain the same but your "
+"widgets will show an error message until a successfully sync is achieved."
+msgstr ""
+
+#: includes/uamp-help.php:34
+msgid "Reschedule CRON Jobs"
+msgstr ""
+
+#: includes/uamp-help.php:36
+msgid ""
+"To ensure that our cached data is kept up to date, they are scheduled to be "
+"deleted once an hour or one a day. This task is handled by WordPress "
+"Scheduled Events which is managed by the WP CRON."
+msgstr ""
+
+#: includes/uamp-help.php:37
+msgid ""
+"Under normal conditions, the plugin will schedule in two CRON jobs. One that "
+"runs every hour and one that runs one day. If this is working correctly, you "
+"should see when they will run next below. If you see \"Unknown\", the jobs "
+"might failed to schedule or re-schedule properly or the WP CRON is disabled "
+"on your site. If you have selected to use the Alternate CRON in your "
+"settings, you might see \"Unknown\" until the first job triggers."
+msgstr ""
+
+#: includes/uamp-help.php:38
+msgid "Click on the \"Reschedule\" link to re-schedule the two CRON jobs."
+msgstr ""
+
+#: includes/uamp-help.php:43
+msgid "Delete uamplified.io Data"
+msgstr ""
+
+#: includes/uamp-help.php:44
+msgid ""
+"When you disable and select to delete this plugin here in the wp-admin area, "
+"the plugin will clean up after it's self by removing all your data "
+"automatically. You can however use this tool to reset your installation if "
+"you experience problems and want to start fresh. It is highly recommended "
+"that you remove menu-items and widgets you might be using before selecting "
+"to use this tool."
+msgstr ""
+
+#. Name of the plugin
+#. Author of the plugin
+#: includes/uamp-admin.php:123 includes/uamp-admin.php:124
+#: includes/uamp-admin.php:133 includes/uamp-admin.php:134
+#: includes/uamp-menu-items.php:458
+msgid "uamplified.io"
+msgstr ""
+
+#: includes/uamp-admin.php:159
+msgid "Validating ..."
+msgstr ""
+
+#: includes/uamp-admin.php:160
+msgid "Removing ..."
+msgstr ""
+
+#: includes/uamp-admin.php:161
+msgid "Updating ..."
+msgstr ""
+
+#: includes/uamp-admin.php:162 includes/uamp-admin.php:283
+msgid "Communications error. Please refresh this page and try again."
+msgstr ""
+
+#: includes/uamp-admin.php:186
+msgid "Uamplified Settings"
+msgstr ""
+
+#: includes/uamp-admin.php:191
+msgid ""
+"Please fill out the required fields below and save, before connecting your "
+"products further down."
+msgstr ""
+
+#: includes/uamp-admin.php:196
+msgid "Company Domain"
+msgstr ""
+
+#: includes/uamp-admin.php:199 includes/uamp-admin.php:209
+#: includes/uamp-admin.php:257
+msgid "required"
+msgstr ""
+
+#: includes/uamp-admin.php:201
+msgid "Please enter the company domain for your uamplified.io hosted website."
+msgstr ""
+
+#: includes/uamp-admin.php:206
+msgid "Company Key"
+msgstr ""
+
+#: includes/uamp-admin.php:210
+msgid ""
+"Please enter the company key found in your uamplified account. Warning! "
+"Changing your company key will remove any validated product API keys you "
+"might have had added already!"
+msgstr ""
+
+#: includes/uamp-admin.php:215
+msgid "Widget Styling"
+msgstr ""
+
+#: includes/uamp-admin.php:218
+msgid "Disable the built-in widget styling."
+msgstr ""
+
+#: includes/uamp-admin.php:223
+msgid "Alternate CRON"
+msgstr ""
+
+#: includes/uamp-admin.php:226
+msgid "Use the alternate CRON to clear cached data."
+msgstr ""
+
+#: includes/uamp-admin.php:227
+msgid ""
+"Make sure you select this if you have the built-in WordPress CRON disabled."
+msgstr ""
+
+#: includes/uamp-admin.php:233
+msgid "Save Changes"
+msgstr ""
+
+#: includes/uamp-admin.php:236
+msgid "Connected Products"
+msgstr ""
+
+#: includes/uamp-admin.php:238
+#, php-format
+msgid ""
+"To start using this plugin, first we need to connect your website with your "
+"uamplified.io products. Please enter the API Key for the product you wish to "
+"connect below and click Validate. You can find this key in your %s. Your "
+"product details, such as name, url or active modules will be synced once a "
+"day to keep it up to date. You can however sync a product if you made "
+"changes on the uamplified website by using the Sync Product button below."
+msgstr ""
+
+#: includes/uamp-admin.php:238
+msgid "uamplified.io account"
+msgstr ""
+
+#: includes/uamp-admin.php:254
+msgid "Product API Key"
+msgstr ""
+
+#: includes/uamp-admin.php:257
+msgid "Validate"
+msgstr ""
+
+#: includes/uamp-admin.php:282
+msgid "Running ..."
+msgstr ""
+
+#: includes/uamp-admin.php:285
+msgid "Are you sure you want to clear all cached results?"
+msgstr ""
+
+#: includes/uamp-admin.php:286
+msgid "Are you sure you want to re-schedule all cron jobs?"
+msgstr ""
+
+#: includes/uamp-admin.php:287
+msgid "Are you sure you want to delete all data?"
+msgstr ""
+
+#: includes/uamp-admin.php:311
+msgid "Uamplified Tools"
+msgstr ""
+
+#: includes/uamp-admin.php:318
+msgid ""
+"We have put together some tools to help you resolve scheduling and caching "
+"issues for the uamplified.io plugin."
+msgstr ""
+
+#: includes/uamp-admin.php:323
+msgid "Tool: Clear Widget Cache"
+msgstr ""
+
+#: includes/uamp-admin.php:324
+msgid "Delete Cache"
+msgstr ""
+
+#: includes/uamp-admin.php:327
+msgid ""
+"Clearing your widget cache will force all widgets to load a fresh set of "
+"data from your uamplified.io account."
+msgstr ""
+
+#: includes/uamp-admin.php:329
+msgid "Total cached results:"
+msgstr ""
+
+#: includes/uamp-admin.php:334
+msgid "Tool: Reschedule CRON Jobs"
+msgstr ""
+
+#: includes/uamp-admin.php:335
+msgid "Reschedule"
+msgstr ""
+
+#: includes/uamp-admin.php:338
+msgid ""
+"Use this option if you experience issues with the uamplified hourly and "
+"daily cron schedules."
+msgstr ""
+
+#: includes/uamp-admin.php:340
+msgid "Next Hourly Cron Job will run in"
+msgstr ""
+
+#: includes/uamp-admin.php:340 includes/uamp-admin.php:341
+msgid "Unknown"
+msgstr ""
+
+#: includes/uamp-admin.php:341
+msgid "Next Daily Cron Job will run in"
+msgstr ""
+
+#: includes/uamp-admin.php:346
+msgid "Tool: Delete uamplified.io Data"
+msgstr ""
+
+#: includes/uamp-admin.php:347
+msgid "Delete Data"
+msgstr ""
+
+#: includes/uamp-admin.php:350
+msgid ""
+"Warning. Using this option will delete all plugin related data from your "
+"database. This includes your plugin settings, product data, authentication "
+"keys and module data. This action can not be undone!"
+msgstr ""
+
+#: includes/uamp-admin.php:415
+msgid "Please enter an API Key."
+msgstr ""
+
+#: includes/uamp-admin.php:419 includes/uamp-admin.php:469
+#: includes/uamp-admin.php:498
+msgid "Please enter your company domain before doing this action."
+msgstr ""
+
+#: includes/uamp-admin.php:433
+msgid "This API Key has already been validated."
+msgstr ""
+
+#: includes/uamp-admin.php:441
+msgid "Invalid API Key. Validation failed."
+msgstr ""
+
+#: includes/uamp-admin.php:445 includes/uamp-admin.php:518
+msgid "Could not save the new key. Please refresh this page and try again."
+msgstr ""
+
+#: includes/uamp-admin.php:473
+msgid "API Key not found."
+msgstr ""
+
+#: includes/uamp-admin.php:502
+msgid "Invalid product ID. Please refresh this page and try again."
+msgstr ""
+
+#: includes/uamp-admin.php:506
+msgid "Product not found. Please refresh this page and try again."
+msgstr ""
+
+#: includes/uamp-admin.php:514
+msgid "Invalid API Key. Sync failed. Please refresh this page and try again."
+msgstr ""
+
+#: includes/uamp-admin.php:540
+msgid "Unknown tool id. Please refresh this page and try again."
+msgstr ""
+
+#: includes/uamp-admin.php:547
+msgid "Widget caches successfully deleted."
+msgstr ""
+
+#: includes/uamp-admin.php:554 includes/uamp-admin.php:557
+msgid "Not Scheduled"
+msgstr ""
+
+#: includes/uamp-admin.php:559
+msgid "Cron jobs successfully re-scheduled."
+msgstr ""
+
+#: includes/uamp-admin.php:570
+msgid ""
+"All data was successfully deleted. If you have any uamplified widgets active,"
+" please remove them before disabling this plugin."
+msgstr ""
+
+#: includes/uamp-admin.php:574
+msgid "Unknown tool."
+msgstr ""
+
+#: includes/uamp-menu-items.php:460
+msgid ""
+"You can select to insert product module popups as a menu item using the "
+"uamplified.io menu item."
+msgstr ""
+
+#: includes/uamp-menu-items.php:461
+msgid "Customizations"
+msgstr ""
+
+#: includes/uamp-menu-items.php:462
+msgid ""
+"You can set the \"Navigation Label\" to anything you like, or leave it empty "
+"to only show the indicator. You can also add any \"CSS Classes\" or \"Link "
+"Relationship\". To customize the popup window, you will however need to use "
+"the \"Description\" field for the selected menu item. If you do not see this "
+"field, click on \"Screen Options\" and select to show the \"Description\" "
+"field."
+msgstr ""
+
+#: includes/uamp-menu-items.php:463
+msgid ""
+"Each variable you want to override and it's corresponding value needs to be "
+"set in the following format:"
+msgstr ""
+
+#: includes/uamp-menu-items.php:463
+msgid "Multiple variables are separated by commas. ex:"
+msgstr ""
+
+#: includes/uamp-menu-items.php:464
+msgid "Popup Options"
+msgstr ""
+
+#: includes/uamp-functions.php:36
+msgid "Invalid uamplified.io request."
+msgstr ""
+
+#: includes/uamp-functions.php:55
+msgid "uamplified.io API service is currently offline. Please try again later."
+msgstr ""
+
+#: includes/uamp-functions.php:353
+msgid "Just now"
+msgstr ""
+
+#: includes/uamp-functions.php:353
+#, php-format
+msgid "Last synced %s ago."
+msgstr ""
+
+#: includes/uamp-functions.php:356
+msgid "Remove"
+msgstr ""
+
+#: includes/uamp-functions.php:359
+msgid "Sync Product"
+msgstr ""
+
+#: includes/uamp-functions.php:405 includes/uamp-widgets.php:190
+msgid "Votes"
+msgstr ""
+
+#: includes/uamp-functions.php:455 includes/uamp-functions.php:486
+#: includes/uamp-functions.php:519 includes/uamp-widgets.php:122
+#: includes/uamp-widgets.php:362 includes/uamp-widgets.php:577
+msgid "No items found."
+msgstr ""
+
+#: includes/uamp-functions.php:539
+msgid "View All"
+msgstr ""
+
+#: includes/uamp-widgets.php:22
+msgid "uamplified.io Product Listen"
+msgstr ""
+
+#: includes/uamp-widgets.php:25
+msgid "Show product related requests."
+msgstr ""
+
+#: includes/uamp-widgets.php:46
+msgid "The Listen module is not enabled for the selected product."
+msgstr ""
+
+#: includes/uamp-widgets.php:48 includes/uamp-widgets.php:296
+#: includes/uamp-widgets.php:518
+msgid "The selected product could not be found. Please check your API keys."
+msgstr ""
+
+#: includes/uamp-widgets.php:92
+#, php-format
+msgid "%d Comment"
+msgid_plural "%d Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/uamp-widgets.php:92
+msgid "No comments"
+msgstr ""
+
+#: includes/uamp-widgets.php:94
+msgid "Author"
+msgstr ""
+
+#: includes/uamp-widgets.php:125 includes/uamp-widgets.php:365
+#: includes/uamp-widgets.php:580
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: includes/uamp-widgets.php:156 includes/uamp-widgets.php:394
+#: includes/uamp-widgets.php:610
+msgid "Title"
+msgstr ""
+
+#: includes/uamp-widgets.php:160 includes/uamp-widgets.php:398
+#: includes/uamp-widgets.php:614
+msgid "Product"
+msgstr ""
+
+#: includes/uamp-widgets.php:178 includes/uamp-widgets.php:424
+#: includes/uamp-widgets.php:632
+msgid "Number"
+msgstr ""
+
+#: includes/uamp-widgets.php:182
+msgid "Content Length"
+msgstr ""
+
+#: includes/uamp-widgets.php:184
+msgid ""
+"Option to set the maximum length of the request description. Use -1 to hide "
+"the content, 0, to show the entire content or the maximum length to show."
+msgstr ""
+
+#: includes/uamp-widgets.php:187 includes/uamp-widgets.php:636
+msgid "Order By"
+msgstr ""
+
+#: includes/uamp-widgets.php:189
+msgid "Publish Date"
+msgstr ""
+
+#: includes/uamp-widgets.php:191
+msgid "Comment Count"
+msgstr ""
+
+#: includes/uamp-widgets.php:195 includes/uamp-widgets.php:644
+msgid "Order"
+msgstr ""
+
+#: includes/uamp-widgets.php:197 includes/uamp-widgets.php:646
+msgid "Ascending"
+msgstr ""
+
+#: includes/uamp-widgets.php:198 includes/uamp-widgets.php:647
+msgid "Descending"
+msgstr ""
+
+#: includes/uamp-widgets.php:202 includes/uamp-widgets.php:428
+#: includes/uamp-widgets.php:651
+msgid "Caching"
+msgstr ""
+
+#: includes/uamp-widgets.php:204 includes/uamp-widgets.php:430
+#: includes/uamp-widgets.php:653
+msgid "Update Hourly"
+msgstr ""
+
+#: includes/uamp-widgets.php:205 includes/uamp-widgets.php:431
+#: includes/uamp-widgets.php:654
+msgid "Update Daily"
+msgstr ""
+
+#: includes/uamp-widgets.php:207 includes/uamp-widgets.php:433
+#: includes/uamp-widgets.php:656
+msgid ""
+"You can clear the cached results for this widget by re-saving it's settings."
+msgstr ""
+
+#: includes/uamp-widgets.php:210 includes/uamp-widgets.php:436
+#: includes/uamp-widgets.php:659
+msgid "Visibility"
+msgstr ""
+
+#: includes/uamp-widgets.php:212 includes/uamp-widgets.php:438
+#: includes/uamp-widgets.php:661
+msgid "Show to anyone"
+msgstr ""
+
+#: includes/uamp-widgets.php:213 includes/uamp-widgets.php:439
+#: includes/uamp-widgets.php:662
+msgid "Only logged in users"
+msgstr ""
+
+#: includes/uamp-widgets.php:214 includes/uamp-widgets.php:440
+#: includes/uamp-widgets.php:663
+msgid "Visitors only"
+msgstr ""
+
+#: includes/uamp-widgets.php:270
+msgid "uamplified.io Product Talk"
+msgstr ""
+
+#: includes/uamp-widgets.php:273
+msgid "Show latest product announcements / releases."
+msgstr ""
+
+#: includes/uamp-widgets.php:294
+msgid "The Talk module is not enabled for the selected product."
+msgstr ""
+
+#: includes/uamp-widgets.php:335
+msgid "RELEASE"
+msgstr ""
+
+#: includes/uamp-widgets.php:335
+msgid "ANNOUNCEMENT"
+msgstr ""
+
+#: includes/uamp-widgets.php:416
+msgid "Show"
+msgstr ""
+
+#: includes/uamp-widgets.php:418
+msgid "Announcements & Releases"
+msgstr ""
+
+#: includes/uamp-widgets.php:419
+msgid "Announcements"
+msgstr ""
+
+#: includes/uamp-widgets.php:420
+msgid "Releases"
+msgstr ""
+
+#: includes/uamp-widgets.php:492
+msgid "uamplified.io Product Launch"
+msgstr ""
+
+#: includes/uamp-widgets.php:495
+msgid "Show product related campaigns."
+msgstr ""
+
+#: includes/uamp-widgets.php:516
+msgid "The Launch module is not enabled for the selected product."
+msgstr ""
+
+#: includes/uamp-widgets.php:558
+msgid "Status:"
+msgstr ""
+
+#: includes/uamp-widgets.php:558
+msgid "RUNNING"
+msgstr ""
+
+#: includes/uamp-widgets.php:558
+msgid "COMING SOON"
+msgstr ""
+
+#: includes/uamp-widgets.php:563
+msgid "Ends in"
+msgstr ""
+
+#: includes/uamp-widgets.php:638
+msgid "Date Ending"
+msgstr ""
+
+#: includes/uamp-widgets.php:639
+msgid "Date Published"
+msgstr ""
+
+#: includes/uamp-widgets.php:640
+msgid "Popularity"
+msgstr ""
+
+#. Description of the plugin
+msgid "Connect your website with your uamplified.io account."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https//uamplified.io"
+msgstr ""
